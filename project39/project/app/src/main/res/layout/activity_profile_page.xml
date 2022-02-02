@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.ProfilePage"
+    android:background="@color/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/avatar"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="144dp"
+            android:src="@drawable/photo"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="7dp"
+            app:layout_constraintBottom_toBottomOf="@+id/circleImageView"
+            app:layout_constraintStart_toStartOf="@+id/circleImageView"
+            app:layout_constraintTop_toTopOf="@+id/circleImageView"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="172dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/nunito_regular"
+            android:text="Profile"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circleImageView"
+            tools:ignore="MissingConstraints" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/user_information"
+            android:padding="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="20dp">
+
+
+            <LinearLayout
+                android:id="@+id/line_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/icn_username"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_username" />
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25dp"
+                    android:layout_toEndOf="@+id/icn_name"
+                    android:fontFamily="@font/nunito_extra_bold"
+                    android:text="3btkj"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_username"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/icn_email"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_mail_outline" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25dp"
+                    android:fontFamily="@font/nunito_extra_bold"
+                    android:text="3btkj@poliupg.ac.id"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_email">
+
+                <ImageView
+                    android:id="@+id/icn_pass"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_lock" />
+
+                <TextView
+                    android:id="@+id/pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25dp"
+                    android:fontFamily="@font/nunito_extra_bold"
+                    android:text="*********"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:text="LogOut"
+            android:fontFamily="@font/nunito_extra_bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:background="@drawable/btn_logout"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.project.Activity.wa">
+
+    <EditText
+        android:id="@+id/editnama"
+        android:inputType="textPersonName"
+        android:hint="Nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editemail"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editnomor"
+        android:inputType="phone"
+        android:hint="Nomor Telepon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editpesan"
+        android:gravity="top|left"
+        android:hint="Tulis Pesan Anda Disini"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnkirim"
+        android:text="KIRIM"/>
+
+
+</LinearLayout>

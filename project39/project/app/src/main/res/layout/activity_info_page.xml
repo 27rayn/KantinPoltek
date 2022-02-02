@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.ProfilePage"
+    android:background="@color/background">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="00dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/kantinpoltek"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/nunito_regular"
+            android:text="Info Aplikasi"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circleImageView"
+            tools:ignore="MissingConstraints" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/user_information"
+            android:padding="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="20dp">
+
+
+            <LinearLayout
+                android:id="@+id/line_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25dp"
+                    android:layout_toEndOf="@+id/icn_name"
+                    android:fontFamily="@font/nunito_extra_bold"
+                    android:text="Nama Aplikasi          KantinPoltek"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_username"
+                android:layout_marginBottom="20dp">
+
+
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25dp"
+                    android:fontFamily="@font/nunito_extra_bold"
+                    android:text="Versi                          win39"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_email">
+
+                <TextView
+                    android:id="@+id/pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25dp"
+                    android:fontFamily="@font/nunito_extra_bold"
+                    android:text="Ditujukan untuk              masyarakat poltek"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/ic_arrow_back_ios_24"
+            android:fontFamily="@font/nunito_extra_bold"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="31dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

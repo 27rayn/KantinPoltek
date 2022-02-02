@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Add Data"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tambah List Menu"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#046057" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_menu"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/ETMenu"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Nama Menu"
+                app:met_floatingLabel="normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_harga"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/ETHarga"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Harga"
+                app:met_floatingLabel="normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_home_24"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/ETKantin"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Nama Kantin"
+                app:met_floatingLabel="normal"/>
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/BTNSubmit"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="89dp"
+            android:drawableStart="@drawable/ic_present_to_all_black_24dp"
+            android:text="Add"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</LinearLayout>

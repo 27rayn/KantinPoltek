@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Kantin Poltek</string>
+    <string name="logo_name">Get away</string>
+    <string name="slogan_name">we will help you to find your way</string>
+    <string name="powered_by">powered by WIN</string>
+
+    <!--- untuk onBoarding -->
+
+    <!--- Judul -->
+    <string name="slide1">Everything Fresh</string>
+    <string name="slide2">Easy Payment</string>
+    <string name="slide3">Fast Delivery</string>
+
+    <!--- Deskripsi -->
+    <string name="slide1_desc">Food is happiness</string>
+    <string name="slide2_desc">Food is happiness</string>
+    <string name="slide3_desc">Food is happiness</string>
+
+    <!--- Button -->
+    <string name="btn_skip">Skip</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_start">Lets get started</string>
+
+    <string name="signIn_desc2">Kantin Poltek</string>
+    <string name="signIn_desc">Log in to your account </string>
+
+    <string name="signUp_desc2">Kantin Poltek</string>
+    <string name="signUp_desc">Fast and Easy Food Order</string>
+
+
+</resources>
